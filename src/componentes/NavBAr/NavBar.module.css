@@ -1,0 +1,37 @@
+:root {
+  --bs-blue2: rgb(26, 29, 56);
+  --bs-red1: #ee0842;
+}
+.navBarStyle{
+  padding-top: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 1rem;
+  background-color: rgba(26, 29, 56, 0.5);
+  backdrop-filter: blur(0.4rem);
+}
+@media (max-width: 1200px){
+  .navBarStyle{
+    padding-left: rem;
+    padding-right: 3rem;
+  }
+}
+
+.linkHover.active{
+  font-weight: 800;
+  color: var(--bs-red1);
+}
+.linkHover:hover{
+  font-weight: 450;
+  color: white;
+}
+
+
+  @media (min-width: 800px) {
+    .customHover:hover {
+      background-color: var(--bs-red1); /* Cambia el color de fondo al pasar el ratón */
+      color: white; /* Cambia el color del texto al pasar el ratón */
+    }
+  }
+
+  

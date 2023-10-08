@@ -1,0 +1,408 @@
+
+*{
+  font-family: Gelion;
+}
+
+p{
+  font-size: 18px;
+}
+h3{
+  font-size: 24px;
+}
+
+
+
+.parent h1{
+    background: var(--bs-red1);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+}
+.vcBoxCircle{
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.vcBoxCircle img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 50%;
+}
+.background {
+  background: #e7e7e7;
+}
+.child img{
+  width: 300px;
+}
+.child h2{
+  font-size: 36px;
+}
+.child strong {
+  font-weight: 500;
+  color: var(--bs-red1); /* 6s para un ciclo completo (3s de giro + 3s de pausa) */
+}
+.rotate {
+  font-style: italic;
+  font-weight: 500;
+  animation: rotateAndPauseH3 6s infinite; /* 6s para un ciclo completo (3s de giro + 3s de pausa) */
+}
+
+@keyframes rotateAndPauseH3 {
+  0%, 100% {
+    transform: rotateX(0deg); /* Inicio y fin de la animación (0 grados de rotación) */
+  }
+  50% {
+    transform: rotateX(360deg); /* Mitad de la animación (360 grados de rotación) */
+  }
+}
+
+.btn {
+  margin: 10px 0;
+  padding: 5px 20px;
+  background: var(--bs-blue2);
+  border: none;
+}
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover{
+  background: var(--bs-red1);
+}
+.bgImage{
+  background-image: url(src/assets//images/servicios/gojo\ rojo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bgContainer1{
+  background: rgba(29, 26, 56, 0.8);
+
+}
+.bgContainer2{
+  background: rgba(255,50,30, 0.8);
+}
+.childWhite{
+  padding-top: 15px;
+  color: #fff;
+}
+.childIcon{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marca{
+  width: 150px;
+}
+
+
+
+/* gallery  */
+
+.galleryTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.galeryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1, 1fr));
+  gap: 5px;
+}
+
+/* Estilos para tablet (3 columnas) */
+@media (min-width: 768px) and (max-width: 1203px) {
+  .galeryContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Ajusta el espacio entre imágenes */
+  }
+}
+
+/* Estilos para desktop (4 columnas) */
+@media (min-width: 1204px) {
+  .galeryContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Ajusta el espacio entre imágenes */
+  }
+}
+
+.galleryItem {
+  position: relative;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galleryItem:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.overlayContent {
+  text-align: center;
+  color: white;
+}
+
+.imageViewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Cambio a columna */
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.imageViewerContent {
+  display: flex;
+  flex-direction: column; /* Cambio a columna */
+  background: white;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.imageViewer img {
+  max-width: 100%; /* Cambio a 100% para que ocupe todo el ancho */
+  max-height: auto; /* Cambio a auto para mantener la proporción */
+}
+
+.imageInfo {
+  text-align: center;
+  padding: 15px;
+}
+.imageInfo h4{
+  color: var(--bs-red1);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.imageInfo p{
+  margin: 0;
+}
+.btnInfo{
+  display: flex;
+  justify-content: center;
+}
+.closeIcon {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+  z-index: 1100; /* Asegura que esté por encima de la vista superpuesta */
+}
+
+/* Estudio */
+
+.containerEst{
+  display: flex;
+  flex-direction: column;
+}
+.childWhite{
+  color: #fff;
+  padding: 20px 0px;
+  font-size: 18px;
+}
+.childDark{
+  color: var(--bs-dark);
+  font-size: 18px;
+}
+
+.btnSec{
+  border: 2px solid var(--bs-white);
+  background: none;
+}
+.btnSec a{
+  text-decoration: none;
+  color: #fff;
+}
+.btnSecDark{
+  border: 2px solid var(--bs-red1);
+}
+.btnSecDark a{
+  color: #000;
+}
+.bgEst1{
+  background: var(--bs-red1);
+  padding: 30px 50px;
+}
+.bgEst2{
+  background: #fff;
+  padding: 30px 50px;
+}
+.bgEst3{
+  background: var(--bs-red1);
+  padding: 30px 50px;
+}
+
+
+
+
+/* clientes */
+
+.rotating {
+  display: inline-block;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: absolute;
+  transform-origin: center;
+  animation: flipAnimation 4s infinite;
+}
+
+@keyframes flipAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  transform: rotateX(180deg);
+}
+
+
+.child h3{
+  font-style: italic;
+  font-weight: 300;
+}
+
+.childBrands{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.childBrands a {
+  transition: transform 0.5s ease; /* Añade una transición para transformar (escalar) durante 0.3 segundos con una función de timing "ease" */
+}
+
+.childBrands a:hover {
+  transform: scale(1.2); /* Escala al 110% en hover */
+}
+
+
+
+
+/* que ahcemos */
+
+.parTitle{
+  text-align: center;
+  padding: 25px 50px;
+}
+.parTitle h2{
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.childContainer{
+  display: flex;
+  flex-direction: column;
+}
+.childContent{
+  display: flex;
+  justify-content: space-between;
+}
+.childContent .icon{
+  background: var(--bs-red1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.childContent icon{
+  font-size: 20px;
+}
+
+.childBg{
+  background: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowContainer{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (min-width: 768px){
+  .rowParent{
+    display: flex;
+  }
+  .rowcontainer{
+    display: flex;
+  }
+  .childContDer{
+    text-align: right;
+  }
+  .firstChild{
+    order: 2;
+  }
+.secondChild{
+    order: 1;
+  }
+  .childBg img{
+    width: 300px;
+    padding: 0;
+  }
+  .rowContainer{
+    padding: 30px;
+  }
+}
+@media (min-width: 1200px){
+  .childBg img{
+    width: 400px;
+    padding: 0;
+  }
+  .rowContainer{
+    padding: 60px;
+  }
+}

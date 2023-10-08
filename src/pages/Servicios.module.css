@@ -1,0 +1,140 @@
+:root {
+  --bs-blue2: rgb(26, 29, 56);
+  --bs-red1: #ee0842;
+}
+.fillContainer {
+    padding-top: 85%;
+    padding-bottom: 85%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(26, 29, 56, 0.5), rgba(26, 29, 56, 0.5)), url(../assets/images/servicios/gojo rojo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: cover;
+  }
+.fillContainer h2{
+  font-size: 2rem;
+}
+@media (min-width: 768px){
+    .fillContainer{
+        padding-top: 65%;
+        padding-bottom: 65%;
+    }
+    .fillContainer h2{
+      font-size: 2.5rem;
+    }
+    .fillContainer p{
+      font-size: 25px;
+    }
+}
+@media (min-width: 1204px){
+    .fillContainer{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .fillContainer h2{
+      font-size: 3.5rem;
+    }
+    .fillContainer p{
+      font-size: 35px;
+    }
+}
+  .contactContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background: var(--bs-red1);
+  }
+  
+  .modelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modelImg {
+    width: 100%;
+    height: auto; /* Adjusted height to maintain aspect ratio */
+    object-fit: cover;
+  }
+    
+  .wrapper {
+    padding: 25px;
+  }
+  
+  .wrapper h2 {
+    font-weight: 650;
+    margin-bottom: 35px;
+  }
+  
+  .wrapper p {
+    font-size: 15px;
+  }
+  
+  .modelado {
+    color: white;
+    background: var(--bs-red1);
+  }
+  
+  .modelado h2 {
+    padding: 40px;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .modelContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .modelImgContainer {
+      width: 50%;
+      height: auto;
+    }
+  
+    .modelImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .wrapper {
+      width: 50%;
+      padding: 50px;
+    }
+  }
+  @media (min-width: 1204px) {
+    .modelContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .modelImgContainer {
+      width: 50%;
+      height: 100%;
+    }
+  
+    .modelImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .wrapper {
+      width: 50%;
+      padding: 50px;
+    }
+    .wrapper p{
+      font-size: 20px;
+    }
+  }
+
+  
+  
