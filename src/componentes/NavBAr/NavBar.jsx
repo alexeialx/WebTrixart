@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../NavBAr/NavBar.module.css";
+import styles from './NavBar.module.css';
 import logo from "../../assets/images/Trixart.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/fontawesome-free-solid";
